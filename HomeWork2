@@ -1,0 +1,51 @@
+/ **
+* Java 1. HomeWork2
+*
+* @ автор Лазарев Алексей
+* @ версия 09.11.2021
+* /
+public  class  HomeWork2 {
+
+    public  static  void  main ( String [] args ) {
+        Система . из . println ( isBetween10And20 ( 10 , - 2 ));
+        Система . из . println ( isBetween10And20 ( 12 , 5 ));
+        Система . из . println ( isBetween10And20 ( 20 , 1 ));
+
+        isPositiveOrNegative ( - 1 );
+        isPositiveOrNegative ( 0 );
+        isPositiveOrNegative ( 1 );
+
+        Система . из . println ( isNegative ( - 1 ));
+        Система . из . println ( isNegative ( 0 ));
+        Система . из . println ( isNegative ( 1 ));
+
+        repeatString ( "Привет, Ява!" , 3 );
+
+        Система . из . println ( isYearLaep ( 1904 ));
+        Система . из . println ( isYearLaep ( 1900 ));
+        Система . из . println ( isYearLaep ( 2000 ));
+        Система . из . println ( isYearLaep ( 2005 ));
+    }
+
+    static  boolean  isBetween10And20 ( int  a , int  b ) {
+        вернуть  a  +  b  > =  10  &&  a  +  b  <=  20 ;
+    }
+
+    static  void  isPositiveOrNegative ( int  a ) {
+        Система . из . println ( a  > =  0 ? «Положительный» : «Отрицательный» );
+    }
+
+    static  boolean  isNegative ( int  a ) {
+        вернуть  < 0 ;  
+    }
+
+    static  void  repeatString ( String  s , int  count ) {
+        for ( int  i  =  0 ; i  <  count ; i + + ) {
+            Система . из . println ( s );
+        }
+    }
+
+    static  boolean  isYearLaep ( int  year ) {
+        доход ( год  %  4  ==  0  &&  год  %  100  ! =  0 ) ||  год  %  400  ==  0 ;
+    }
+}
